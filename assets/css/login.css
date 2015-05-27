@@ -1,0 +1,83 @@
+body {
+	font-family:sans-serif;
+	background:#F9F9F9;
+}
+
+:focus { outline:none;}
+
+.container {
+	width:500px;
+	background:#FAFAFA;
+        border: #f3de62;
+	margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+	box-shadow:0 0 5px #CCC;
+	-o-box-shadow:0 0 5px #CCC;
+	-moz-box-shadow:0 0 5px #CCC;
+	-webkit-box-shadow:0 0 5px #CCC;
+}
+.container .container1{
+ 
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+.header{
+   width:310px;
+   padding:inherit;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 200px;
+
+}
+body{
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+input[type = "text"], input[type = "password"], input[type=submit] {
+	display:block;
+	border:1px solid #CCC;
+	padding:8px;
+	margin:0 0 10px 0;
+	 font-size:18px; 
+	 width:250px; 
+	 border-radius:3px; 
+	-o-border-radius:3px;
+	-moz-border-radius:3px;
+	 -webkit-border-radius:3px; 
+}
+
+input[type=submit] { 
+	background:#7d0f40; 
+	width:100px;
+        height: 40px;
+	border:none; 
+	margin:0; 
+	color:#fff;
+	cursor:pointer;
+}
+
+#styled-select {
+   width: 260px;
+   height: 40px;
+   overflow: hidden;
+   background: url("../img/downarrow_blue.png") no-repeat right #fff;
+   border: 1px solid #ccc;
+   margin:auto;
+   border-radius:6px;
+}
+#styled-select select {
+   background: transparent;
+   width: 260px;
+   padding: 3px 0;
+   font-size: 18px;
+   border: 0;
+   border-radius: 0;
+   height: 40px;
+   -webkit-appearance: none;
+   font-family:helvetica-roman;
+   color:#000;   
+}
