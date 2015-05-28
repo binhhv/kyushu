@@ -42,10 +42,9 @@ class summary extends CI_Controller{
         $this->load->view('evaluation');
     }
     
-<<<<<<< HEAD
+
     //hung commit teo
-=======
     ///sumary binh
->>>>>>> origin/master
+    //hung row one
     
 }
