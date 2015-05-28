@@ -1,0 +1,199 @@
+<?php
+
+class airmodel extends CI_Model{
+    
+    //insert air data by yyyymmm
+    public function insertAirModel($param){
+        $data = array(
+            'year' => $param['year'],
+            'month' => $param['month'],
+            'airdata' => $param['airdata'],
+            'unit' => $param['unit'],
+            'idmonitor' => $param['idmonitor'],
+            'namesearch' =>$param['namesearch']
+        );
+        
+
+        date_default_timezone_set("Japan");
+        $curentdate = date('Y/m/d');
+        $currentDateTime=date('H:i:s');
+        $newDateTime = date('Ah:i', strtotime($currentDateTime));
+        $time = $curentdate. " " .$newDateTime;
+        $data['dateregister'] = $time;
+        $data['flag'] = 1;
+        $query = $this->db->insert('airdata', $data);
+		 
+        if($query)
+        {
+            return TRUE;
+        }
+        else {
+            return FALSE;
+        }
+    }
+    //update air data by yyyymmm
+    public function updateAirModel($param, $strName){
+        $data = array(
+            'year' => $param['year'],
+            'month' => $param['month'],
+            'airdata' => $param['airdata'],
+            'airdataold' => $param['airdataold'],
+            'unit' => $param['unit'],
+            'idmonitor' => $param['idmonitor']
+        );
+         
+        date_default_timezone_set("Japan");
+        $curentdate = date('Y/m/d');
+        $currentDateTime=date('H:i:s');
+        $newDateTime = date('Ah:i', strtotime($currentDateTime));
+        $time = $curentdate. " " .$newDateTime;
+        $data['dateupdate'] = $time;
+        $data['flag'] = 2;
+        $this->db->where('namesearch', $strName);
+        $query = $this->db->update('airdata', $data);
+        
+        if($query)
+        {
+            return TRUE;
+        }
+        else {
+            return FALSE;
+        }
+    }
+    
+    
+    //insert airspace data by yyyymmm
+    public function insertAirSpaceModel($param){
+        $data = array(
+            'year' => $param['year'],
+            'month' => $param['month'],
+            'airspacedata' => $param['airspacedata'],
+            'unit' => $param['unit'],
+            'idmonitor' => $param['idmonitor'],
+            'namesearch' =>$param['namesearch']
+        );
+        
+
+        date_default_timezone_set("Japan");
+        $curentdate = date('Y/m/d');
+        $currentDateTime=date('H:i:s');
+        $newDateTime = date('Ah:i', strtotime($currentDateTime));
+        $time = $curentdate. " " .$newDateTime;
+        $data['dateregister'] = $time;
+        $data['flag'] = 1;
+        $query = $this->db->insert('airspacedata', $data);
+		 
+        if($query)
+        {
+            return TRUE;
+        }
+        else {
+            return FALSE;
+        }
+    }
+    //update air data by yyyymmm
+    public function updateAirSpaceModel($param, $strName){
+        $data = array(
+            'year' => $param['year'],
+            'month' => $param['month'],
+            'airspacedata' => $param['airspacedata'],
+            'airspacedataold' => $param['airspacedataold'],
+            'unit' => $param['unit'],
+            'idmonitor' => $param['idmonitor']
+        );
+         
+        date_default_timezone_set("Japan");
+        $curentdate = date('Y/m/d');
+        $currentDateTime=date('H:i:s');
+        $newDateTime = date('Ah:i', strtotime($currentDateTime));
+        $time = $curentdate. " " .$newDateTime;
+        $data['dateupdate'] = $time;
+        $data['flag'] = 2;
+        $this->db->where('namesearch', $strName);
+        $query = $this->db->update('airspacedata', $data);
+        
+        if($query)
+        {
+            return TRUE;
+        }
+        else {
+            return FALSE;
+        }
+    }
+    
+    //get air by string
+    public function getAirByString($str){
+        $flag = "0";
+        $sql = "SELECT * FROM airdata WHERE namesearch = '$str'" ;
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            $flag = "1";      
+        }
+        return $flag;
+    }
+      //get airSpace by string
+    public function getAirSpaceByString($str){
+        $flag = "0";
+        $sql = "SELECT * FROM airspacedata WHERE namesearch = '$str'" ;
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            $flag = "1";      
+        }
+        return $flag;
+    }
+    //get air the last
+    public function getAirLast(){
+        $name = '';
+        $sql = "SELECT * FROM airdata ORDER BY id DESC LIMIT 1";
+        $query = $this->db->query($sql);
+
+        if ($query->num_rows() > 0) {
+            $row = $query->row();
+            $name = (string)$row->namesearch;   
+            
+        } else {
+            return FALSE;
+        }
+        return $name;
+    }
+    //get airSpace last
+   public function getAirSpaceLast(){
+        $name = '';
+        $sql = "SELECT * FROM airspacedata ORDER BY id DESC LIMIT 1";
+        $query = $this->db->query($sql);
+
+        if ($query->num_rows() > 0) {
+            $row = $query->row();
+            $name = (string)$row->namesearch;   
+            
+        } else {
+            return FALSE;
+        }
+        return $name;
+    }
+    //get Air by Name
+    public function getAirByName($str){
+        $sql = "SELECT namesearch, airdata, month, idmonitor FROM airdata WHERE namesearch = '$str'" ;
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            $row = $query->row();
+            return $query->row_array();
+        }else{
+            return FALSE;
+        }
+    }
+    
+    //get AirSpace by Name
+    public function getAirSpaceByName($str){
+        $sql = "SELECT namesearch, airspacedata, month, idmonitor FROM airspacedata WHERE namesearch = '$str'" ;
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            $row = $query->row();
+            return $query->row_array();
+        }else{
+            return FALSE;
+        }
+    }
+
+}
+

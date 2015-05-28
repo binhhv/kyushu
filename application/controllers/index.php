@@ -816,7 +816,7 @@ class index extends CI_Controller {
                             $param['year'] = $year;
                             $param['month'] = $month;
                             $param['airspacedata'] = $content;
-                            $param['unit'] = "μSv/h";
+                            $param['unit'] = "cps Gross / mg";
                             $param['idmonitor'] = $strnameMonitor;
                             $param['namesearch'] = $namefile;
                             $this->airmodel->insertAirSpaceModel($param);
@@ -932,7 +932,7 @@ class index extends CI_Controller {
                         $param['month'] = $month;
                         $param['airspacedata'] = $content;
                         $param['airspacedataold'] = $airdata;
-                        $param['unit'] = "μSv/h";
+                        $param['unit'] = "cps Gross / mg";
                         $param['idmonitor'] = $strname;
                         $this->airmodel->updateAirSpaceModel($param, $namesearch);
 

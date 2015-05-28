@@ -1,0 +1,22 @@
+0000000000000000000000000000000000000000 6696c2eadcae1dd1c57845256dba9d28b7ebc81a vanhungpc <vanhungpc@gmail.com> 1432778831 +0700	clone: from https://github.com/binhhv/kyushu.git
+6696c2eadcae1dd1c57845256dba9d28b7ebc81a 9f2d6f7e871d1eae2feb74e6c460cd2f02dbc681 vanhungpc <vanhungpc@gmail.com> 1432779666 +0700	pull --progress --rebase --prune origin master: checkout 9f2d6f7e871d1eae2feb74e6c460cd2f02dbc681
+9f2d6f7e871d1eae2feb74e6c460cd2f02dbc681 9f2d6f7e871d1eae2feb74e6c460cd2f02dbc681 vanhungpc <vanhungpc@gmail.com> 1432779667 +0700	rebase finished: returning to refs/heads/master
+9f2d6f7e871d1eae2feb74e6c460cd2f02dbc681 400e06816176e3a220de19f1fabb426ce88bcd7a vanhungpc <vanhungpc@gmail.com> 1432781547 +0700	pull --progress --prune origin master: Fast-forward
+400e06816176e3a220de19f1fabb426ce88bcd7a 660f38929da19d0b4bc7c73f20080128759acf26 vanhungpc <vanhungpc@gmail.com> 1432781575 +0700	commit: hung commit
+660f38929da19d0b4bc7c73f20080128759acf26 f1ded06a371e81276ae5ef493dfbaa867c9d2161 vanhungpc <vanhungpc@gmail.com> 1432781693 +0700	commit: test2
+f1ded06a371e81276ae5ef493dfbaa867c9d2161 17c6e15de61af09839c1c5f15034fb07b851b0d6 vanhungpc <vanhungpc@gmail.com> 1432781709 +0700	pull --progress --rebase --prune origin master: checkout 17c6e15de61af09839c1c5f15034fb07b851b0d6
+17c6e15de61af09839c1c5f15034fb07b851b0d6 f1ded06a371e81276ae5ef493dfbaa867c9d2161 vanhungpc <vanhungpc@gmail.com> 1432781716 +0700	rebase: aborting
+f1ded06a371e81276ae5ef493dfbaa867c9d2161 a73d17a2fab167e5d14fe94b811b5112bfebf63c vanhungpc <vanhungpc@gmail.com> 1432781764 +0700	commit (merge): Merge remote-tracking branch 'origin/master'
+a73d17a2fab167e5d14fe94b811b5112bfebf63c be6feb9c583beeb3fa812bd45e82a51ec46a3806 vanhungpc <vanhungpc@gmail.com> 1432781915 +0700	commit: test4
+be6feb9c583beeb3fa812bd45e82a51ec46a3806 bb03c1cc1d0de96eddb0c401e6b26b1b50fe5308 vanhungpc <vanhungpc@gmail.com> 1432781926 +0700	pull --progress --rebase --prune origin master: checkout bb03c1cc1d0de96eddb0c401e6b26b1b50fe5308
+bb03c1cc1d0de96eddb0c401e6b26b1b50fe5308 be6feb9c583beeb3fa812bd45e82a51ec46a3806 vanhungpc <vanhungpc@gmail.com> 1432781930 +0700	rebase: aborting
+be6feb9c583beeb3fa812bd45e82a51ec46a3806 39c67c05b03447325e655a618182f4410c98f5a0 vanhungpc <vanhungpc@gmail.com> 1432782068 +0700	commit (merge): Merge remote-tracking branch 'origin/master'
+39c67c05b03447325e655a618182f4410c98f5a0 730e45ee64f6406acbc735161dc2a5584a12f8e7 vanhungpc <vanhungpc@gmail.com> 1432783843 +0700	commit: commit 5
+730e45ee64f6406acbc735161dc2a5584a12f8e7 838df7ac0b223326991c759cc3b2018f4d8f8c50 vanhungpc <vanhungpc@gmail.com> 1432783849 +0700	pull --progress --rebase --prune origin master: checkout 838df7ac0b223326991c759cc3b2018f4d8f8c50
+838df7ac0b223326991c759cc3b2018f4d8f8c50 730e45ee64f6406acbc735161dc2a5584a12f8e7 vanhungpc <vanhungpc@gmail.com> 1432783851 +0700	rebase: aborting
+730e45ee64f6406acbc735161dc2a5584a12f8e7 e05a650db6a8f96f6fb62b15a0faa10263f9a505 vanhungpc <vanhungpc@gmail.com> 1432783898 +0700	commit (merge): Merge remote-tracking branch 'origin/master'
+e05a650db6a8f96f6fb62b15a0faa10263f9a505 0238d162960e2f3dbde1b8eb939efd222e0ac29d vanhungpc <vanhungpc@gmail.com> 1432784293 +0700	commit: abc
+0238d162960e2f3dbde1b8eb939efd222e0ac29d c987431d4b979b45157ad0f22439dc821064e2d2 vanhungpc <vanhungpc@gmail.com> 1432784300 +0700	pull --progress --rebase --prune origin master: checkout c987431d4b979b45157ad0f22439dc821064e2d2
+c987431d4b979b45157ad0f22439dc821064e2d2 0238d162960e2f3dbde1b8eb939efd222e0ac29d vanhungpc <vanhungpc@gmail.com> 1432784303 +0700	rebase: aborting
+0238d162960e2f3dbde1b8eb939efd222e0ac29d 0606adceb4815fca7b0b911b1dd2b954f3e5cc3a vanhungpc <vanhungpc@gmail.com> 1432784334 +0700	commit (merge): Merge remote-tracking branch 'origin/master'
+0606adceb4815fca7b0b911b1dd2b954f3e5cc3a 4c53a78769eefed181965365ecdd4708d1b72ecd vanhungpc <vanhungpc@gmail.com> 1432794613 +0700	commit: insert data into database and move file
