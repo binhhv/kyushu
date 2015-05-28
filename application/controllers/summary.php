@@ -49,5 +49,4 @@ class summary extends CI_Controller{
     //da commit
     //abcdef
 
-    
 }
