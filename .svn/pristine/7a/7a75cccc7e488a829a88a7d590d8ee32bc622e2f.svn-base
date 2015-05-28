@@ -1,0 +1,8 @@
+jQuery(function($){
+  $(window).scroll(function () {
+    $('#page-top').click(function(){
+      $('html, body').queue([]).animate({scrollTop:0});
+      return false;
+    });
+  });
+});
